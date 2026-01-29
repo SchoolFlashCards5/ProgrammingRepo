@@ -1,5 +1,3 @@
-# gamblingsimPY
+my collection of shit from my kali machine
 
-Just a gambling sim, my training for Python.
-Have fun with this ig.
-Also its terminal only (requires cmd prompt and typing)
+mainly so i can access it everywhere and work on it everywhere

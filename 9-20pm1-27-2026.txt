@@ -1,0 +1,12 @@
+7 Captured ARP Req/Rep packets, from 6 hosts.   Total size: 348                                                                                 
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.16    50:32:37:a1:f2:81      2     120  Apple, Inc.                                                                                   
+ 192.168.1.20    00:17:88:6f:93:6e      1      60  Philips Lighting BV                                                                           
+ 192.168.1.44    9a:f1:d1:dd:b7:fd      1      42  Unknown vendor                                                                                
+ 192.168.1.41    74:97:79:f2:cf:25      1      42  CLOUD NETWORK TECHNOLOGY SINGAPORE PTE. LTD.                                                  
+ 192.168.1.38    d2:64:54:de:09:4a      1      42  Unknown vendor                                                                                
+ 192.168.1.22    ac:12:03:08:53:c7      1      42  Intel Corporate                                                                    THIS (192.168.1.22 also known as ac:12:03:08:53:c7 is my LAPTOP)
+            
+This is a list of all ips found at this date/time

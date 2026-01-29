@@ -1,0 +1,130 @@
+#!/bin/bash
+RED="\e[31m"
+ORANGE="\e[38;5;208m"
+YELLOW="\e[38;5;226m"
+GREEN="\e[38;5;46m"
+BLUE="\e[38;5;27m"
+PURPLE="\e[38;5;129m"
+RESET="\e[0m"
+
+if [ "$1" == "im-bored" ]; then
+    echo ""
+    echo "then do something bro idk"
+    echo ""
+    exit 0
+fi 
+
+if [ "$1" == "fuckice" ]; then
+    count=${2:-1}  # default to 1 if no number given
+
+    for ((i=0; i<count; i++)); do
+        echo -e  "${RED}FUCK ICE${RESET}"
+        sleep 0.05
+        echo -e  "${ORANGE}FUCK ICE${RESET}"
+        sleep 0.05
+        echo -e "${YELLOW}FUCK ICE${RESET}"
+        sleep 0.05
+        echo -e "${GREEN}FUCK ICE${RESET}"
+        sleep 0.05
+        echo -e "${BLUE}FUCK ICE${RESET}"
+        sleep 0.05
+        echo -e "${PURPLE}FUCK ICE${RESET}"
+        sleep 0.05
+    done
+
+    exit 0
+fi
+
+if [ "$1" == "why" ]; then
+    count=${2:-1}  # default to 1 if no number given
+
+    for ((i=0; i<count; i++)); do
+        echo -e  "${RED}BECAUSE I FUCKING SAID SO BITCH${RESET}"
+        sleep 0.01
+        echo -e  "${ORANGE}NOW SUFFER THE ENDLESS PRINT COMMAND${RESET}"
+        sleep 0.01
+        echo -e "${YELLOW}BECAUSE I FUCKING SAID SO BITCH${RESET}"
+        sleep 0.01
+        echo -e "${GREEN}NOW SUFFER THE ENDLESS PRINT COMMAND${RESET}"
+        sleep 0.01
+        echo -e "${BLUE}BECAUSE I FUCKING SAID SO BITCH${RESET}"
+        sleep 0.01
+        echo -e "${PURPLE}NOW SUFFER THE ENDLESS PRINT COMMAND${RESET}"
+        sleep 0.01
+    done
+
+    exit 0
+fi
+
+if [ "$1" == "time" ]; then
+    echo "It is"
+    echo "$(date)"
+    exit 0
+fi
+
+if [ "$1" == "whyu" ]; then
+    echo ""
+    echo "BECAUSE I FUCKING SAID SO BITCH"
+    echo ""
+    exit 0
+fi
+
+# Check first argument
+if [ "$1" == "about" ]; then
+    echo "kal command v1.0"
+    echo ""
+    echo "made with 0.00000000000023 love from:"
+    echo ""
+
+    # ASCII art for "Created by"
+    cat << 'EOF'
+               _     
+              | |    
+ ______ _  ___| |__  
+|_  / _` |/ __| '_ \ 
+ / / (_| | (__| | | |
+/___\__,_|\___|_| |_|
+                     
+EOF
+    exit 0
+fi
+
+echo "[DOING TOTALLY IMPORTANT THINGS]"
+sleep 0.2
+
+echo "25%..."
+sleep 0.4
+
+echo "50%..."
+sleep 0.8
+
+echo "100%!"
+
+# Final ASCII art in red
+echo -e "${RED}"
+cat << 'EOF'
+  __            _                        
+ / _|          | |                       
+| |_ _   _  ___| | __  _   _  ___  _   _ 
+|  _| | | |/ __| |/ / | | | |/ _ \| | | |
+| | | |_| | (__|   <  | |_| | (_) | |_| |
+|_|  \__,_|\___|_|\_\  \__, |\___/ \__,_|
+                        __/ |            
+                       |___/             
+EOF
+echo -e "${RESET}"
+#!/bin/bash
+RED="\e[31m"
+RESET="\e[0m"
+
+if [ "$1" == "why" ]; then
+    count=${2:-1}  # default to 1 if no number given
+
+    for ((i=0; i<count; i++)); do
+        echo "BECAUSE I FUCKING SAID SO BITCH"
+        echo "NOW SUFFER THE ENDLESS PRINT COMMAND"
+        sleep 0.01
+    done
+
+    exit 0
+fi

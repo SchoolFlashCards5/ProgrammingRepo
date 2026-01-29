@@ -1,0 +1,32 @@
+#!/bin/bash
+# File: /usr/local/bin/fuckice
+# Purpose: Prints a rainbow "FUCK ICE" message in the terminal.
+# Usage: fuckice [count]
+# Example: fuckice       # prints once
+#          fuckice 5     # prints 5 times
+
+RED="\e[31m"
+ORANGE="\e[38;5;208m"
+YELLOW="\e[38;5;226m"
+GREEN="\e[38;5;46m"
+BLUE="\e[38;5;27m"
+PURPLE="\e[38;5;129m"
+RESET="\e[0m"
+
+# Use the first argument as the repeat count, default to 1
+count=${1:-1}
+
+for ((i=0; i<count; i++)); do
+    echo -e "${RED}FUCK ICE${RESET}"
+    sleep 0.05
+    echo -e "${ORANGE}FUCK ICE${RESET}"
+    sleep 0.05
+    echo -e "${YELLOW}FUCK ICE${RESET}"
+    sleep 0.05
+    echo -e "${GREEN}FUCK ICE${RESET}"
+    sleep 0.05
+    echo -e "${BLUE}FUCK ICE${RESET}"
+    sleep 0.05
+    echo -e "${PURPLE}FUCK ICE${RESET}"
+    sleep 0.05
+done

@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""
-Hey! This is my shitty little program.
-I made it with my crappy python knowledge, and  it doesn't exactly have the best of use cases.
-I hope whoever decides to use it (stupidly) has fun with it.
-Made with 0.00000000058 love from,
-Zach.
-"""
+#its a calc
 
 a = float(input("Put in first number to add:"))
 operator = input("Do an operator for the two:")

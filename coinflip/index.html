@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Def clever</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 class="betsimtitle">Coinflip Simulator</h1>
+    <div class="betinpandbtndiv">
+      <button class="betbtn" id="incrementButton"
+        onclick="placeBet()">Flip</button>
+      <div class="ammtobetandinpdiv">
+        <h2 class="ammtobettxt">Bet amount: </h2>
+        <input id="betInput" class="betinpbox"
+          placeholder="Enter amount to bet"
+          type="text"
+          onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+          name="itemConsumption" />
+      </div>
+    </div>
+    <h1 class="betsimtitle" id="winorlose"></h1>
+    <h1 class="betsimtitle">Balance:</h1>
+    <h2 class="ammtobettxt" id="balance">100</h2>
+    <br><br><br><br>
+    <div class="betinpandbtndiv">
+      <button class="resetbtn" id="resetbtn"
+        onclick="resetbal()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

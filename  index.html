@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Def clever</title>
+    <style>
+      body {
+        background-color: #610000;
+      }
+      .betsimtitle {
+        color:#ff0000;
+        text-shadow:1px 1px 10px #300000, 1px 1px 10px #570000;
+        font-size:48px;
+        text-align:center;
+        font-family: Verdana;
+      } 
+
+      .betbtn {
+        box-shadow: 1px 1px 10px #000000, 1px 1px 10px #570000;
+        height: 125px;
+        width: 200px;
+        float: left;
+        display: flex;
+        justify-content: center ;
+        text-align: center;
+        font-family: Verdana;
+        font-size: 75px;
+        font-weight: bold;
+        align-items: center;
+        background-color: #ff0000;
+        border: 3px solid #9b0000;
+      }
+      
+      .betinpbox {
+        box-shadow: 1px 1px 10px #000000, 1px 1px 10px #570000;
+        height: 90px;
+        width: 125px;
+        float: left;
+        display: flex;
+        justify-content: center ;
+        text-align: center;
+        font-family: Verdana;
+        font-size: 20px;
+        font-weight: bold;
+        align-items: center;
+        background-color: #ff0000;
+        border: 3px solid #9b0000;
+      }
+      
+      .betinpandbtndiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+      }
+      
+      .ammtobetandinpdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+      }
+      
+      .ammtobettxt {
+        color:#ff0000;
+        text-shadow:1px 1px 10px #300000, 1px 1px 10px #570000;
+        font-size:20px;
+        text-align:center;
+        font-family: Verdana;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="betsimtitle">Betting Simulator</h1>
+    <div class="betinpandbtndiv">
+      <button class="betbtn">Bet</button>
+      <div class="ammtobetandinpdiv">
+        <h2 class="ammtobettxt">Amount to bet: </h2>
+      <input class="betinpbox" placeholder="Enter amount to bet" type="text" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" name="itemConsumption" />
+      </div>    
+    </div>
+  <h1 class="betsimtitle">Balance:</h1>
+  <h2 class="ammtobettxt">placeholder</h2>
+  </body>
+</html>

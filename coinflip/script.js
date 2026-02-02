@@ -8,6 +8,7 @@ function resetbal() {
   document.getElementById("balance").textContent = bal; //printsout balance so the user has visual proof of reset
   console.log("balance reset to 100")
 }
+
 function placeBet() {
   let betAmount = Number(document.getElementById("betInput").value);
   if (betAmount <= 0 || betAmount > bal) {
@@ -15,16 +16,37 @@ function placeBet() {
     return;
   }
 
-  if (Math.random() < 0.5) {
-    bal += betAmount; //win does plus bet amm
-    winorlose = "you won"; //sets win or lose display text to win
-    console.log("Balance is now " + bal)
-  } else {
-    bal -= betAmount; //lose does minus bet amm
-    winorlose = "sorry you lost :("; //sets win or lose display text to win
-    console.log("Balance is now " + bal)
-  }
+  const button = document.getElementById("incrementButton");
+  button.disabled = true;
 
-  document.getElementById("balance").textContent = bal;
-  document.getElementById("winorlose").textContent = winorlose;
+  const display = document.getElementById("winorlose");
+
+  let frames = [".", "..", "..."];
+  let frameIndex = 0;
+
+  const animInterval = setInterval(() => {
+    display.textContent = frames[frameIndex];
+    frameIndex = (frameIndex + 1) % frames.length;
+  }, 150);
+
+  // Total animation = 0.5s for initial frames + 150ms pause on last "..."
+  setTimeout(() => {
+    clearInterval(animInterval);
+
+    setTimeout(() => { // small delay to show "..." before result
+      if (Math.random() < 0.5) {
+        bal += betAmount; //win does plus bet amm
+        winorlose = "you won"; //sets win or lose display text to win
+        console.log("Balance is now " + bal)
+      } else {
+        bal -= betAmount; //lose does minus bet amm
+        winorlose = "sorry you lost :("; //sets win or lose display text to win
+        console.log("Balance is now " + bal)
+      }
+
+      document.getElementById("balance").textContent = bal;
+      display.textContent = winorlose;
+      button.disabled = false;
+    }, 150); // extra 150ms pause on last "..."
+  }, 500);
 }

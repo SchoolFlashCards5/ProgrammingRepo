@@ -1,12 +1,9 @@
 import random
 import time
-
 a = 100
 bet = 0
 amountmonths = 0
-
 print("Use the ? command for info and commands")
-
 while True:
  print("")
  cmd = input("Enter command here: ")

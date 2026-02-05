@@ -5,7 +5,9 @@ document.getElementById("balance").textContent = bal; //prints out balance befor
 function resetbal() {
   bal = 100 //resets balance to 0
   winorlose = "balance reset"; //resets win or lose text to balance reset to assure user it was reset to 100
-  document.getElementById("balance").textContent = bal; //printsout balance so the user has visual proof of reset
+  document.getElementById("winorlose").textContent = winorlose;
+  document.getElementById("balance").textContent = winorlose;
+  //printsout balance so the user has visual proof of reset
   console.log("balance reset to 100")
 }
 
